@@ -1,0 +1,18 @@
+### API call (unauthorized)
+GET http://localhost:8080/api/entity
+Accept: application/json
+
+### API call (authorized)
+GET http://localhost:8080/api/entity
+Authorization: Basic apiuser apiuser
+Accept: application/json
+
+### API call (wrong password)
+GET http://localhost:8080/api/entity
+Authorization: Basic apiuser wrongpassword
+Accept: application/json
+
+### API call (wrong user)
+GET http://localhost:8080/api/entity
+Authorization: Basic webuser webuser
+Accept: application/json
